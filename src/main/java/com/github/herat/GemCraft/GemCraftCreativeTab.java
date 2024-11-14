@@ -6,7 +6,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -23,13 +23,10 @@ public class GemCraftCreativeTab  {
             .title(Component.translatable(GEMCRAFT_TAB_STRING))
             .icon(() -> GemCraftItem.RUBY.get().getDefaultInstance())
             .displayItems((pParameters,pOutput) -> {
-//                pOutput.accept(GemCraftItem.RUBY.get());
-//                pOutput.accept(GemCraftItem.SAPPHIRE.get());
-//                pOutput.accept(GemCraftItem.RUBY_SWORD.get());
-//                pOutput.accept(GemCraftItem.RUBY_PICKAXE.get());
-//                pOutput.accept(GemCraftItem.SAPPHIRE_SWORD.get());
-//                pOutput.accept(GemCraftItem.SAPPHIRE_PICKAXE.get());
-//                pOutput.accept(GemCraftBlock.RUBY_BLOCK.get());
+                for (Supplier<? extends Item> itemSup : GemCraftItem.allItem) {
+                    pOutput.accept(itemSup.get());
+                }
+
                 pOutput.accept(GemCraftBlock.SAPPHIRE_BLOCK.get());
             })
             .build());
