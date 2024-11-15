@@ -1,4 +1,4 @@
-package com.github.herat.GemCraft.common.datagen.GCBlockStatesProvider;
+package com.github.herat.GemCraft.common.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;

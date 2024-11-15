@@ -21,7 +21,6 @@ public class GCLanguageProvider extends LanguageProvider {
         this.add(GemCraftItem.RUBY_SHOVEL.get(),"Ruby Shovel");
         this.add(GemCraftItem.RUBY_AXE.get(),"Ruby Axe");
         this.add(GemCraftItem.RUBY_HOE.get(),"Ruby Hoe");
-        this.add(GemCraftItem.SAPPHIRE_HOE.get(),"Sapphire Hoe");
         this.add(GemCraftItem.SAPPHIRE.get(),"Sapphire");
         this.add(GemCraftItem.SAPPHIRE_SWORD.get(),"Sapphire Sword");
         this.add(GemCraftItem.SAPPHIRE_PICKAXE.get(),"Sapphire Pickaxe");

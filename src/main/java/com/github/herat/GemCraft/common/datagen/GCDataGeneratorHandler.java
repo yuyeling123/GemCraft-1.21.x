@@ -1,8 +1,6 @@
 package com.github.herat.GemCraft.common.datagen;
 
 import com.github.herat.GemCraft.GemCraft;
-import com.github.herat.GemCraft.common.datagen.GCBlockStatesProvider.GCBlockStatesProvider;
-import com.github.herat.GemCraft.common.datagen.GCModelProvider.GCItemModelProvider;
 import com.github.herat.GemCraft.common.datagen.LanguageProvider.GCLanguageProvider;
 import com.github.herat.GemCraft.common.datagen.LanguageProvider.GCLanguageProviderCN;
 import net.minecraft.data.DataProvider;
@@ -19,6 +17,13 @@ public class GCDataGeneratorHandler {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
         ExistingFileHelper efh = event.getExistingFileHelper();
+        var lp = event.getLookupProvider();
+
+        // recipe
+        event.getGenerator().addProvider(
+                event.includeServer(),
+                (DataProvider.Factory<GCRecipeProvider>) pOutput -> new GCRecipeProvider(pOutput,lp)
+        );
 
         //blockstates
 
@@ -47,7 +52,5 @@ public class GCDataGeneratorHandler {
                 event.includeClient(),
                 (DataProvider.Factory<GCLanguageProviderCN>) pOutput -> new GCLanguageProviderCN(pOutput,GemCraft.MODID,"zh_cn")
         );
-
-
     }
 }

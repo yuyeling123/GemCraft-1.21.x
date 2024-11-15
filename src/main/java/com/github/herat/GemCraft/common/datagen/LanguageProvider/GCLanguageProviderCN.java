@@ -18,15 +18,14 @@ public class GCLanguageProviderCN extends LanguageProvider {
         this.add(GemCraftItem.RUBY.get(),"红宝石");
         this.add(GemCraftItem.RUBY_SWORD.get(),"红宝石剑");
         this.add(GemCraftItem.RUBY_PICKAXE.get(),"红宝石镐");
-        this.add(GemCraftItem.RUBY_SHOVEL.get(),"红宝石铲子");
-        this.add(GemCraftItem.RUBY_AXE.get(),"红宝石斧头");
-        this.add(GemCraftItem.RUBY_HOE.get(),"红宝石锄头");
-        this.add(GemCraftItem.SAPPHIRE_HOE.get(),"蓝宝石锄头");
+        this.add(GemCraftItem.RUBY_SHOVEL.get(),"红宝石铲");
+        this.add(GemCraftItem.RUBY_AXE.get(),"红宝石斧");
+        this.add(GemCraftItem.RUBY_HOE.get(),"红宝石锄");
         this.add(GemCraftItem.SAPPHIRE.get(),"蓝宝石");
         this.add(GemCraftItem.SAPPHIRE_SWORD.get(),"蓝宝石剑");
         this.add(GemCraftItem.SAPPHIRE_PICKAXE.get(),"蓝宝石镐");
-        this.add(GemCraftItem.SAPPHIRE_SHOVEL.get(),"蓝宝石铲子");
-        this.add(GemCraftItem.SAPPHIRE_AXE.get(),"蓝宝石斧头");
-        this.add(GemCraftItem.SAPPHIRE_HOE.get(),"蓝宝石锄头");
+        this.add(GemCraftItem.SAPPHIRE_SHOVEL.get(),"蓝宝石铲");
+        this.add(GemCraftItem.SAPPHIRE_AXE.get(),"蓝宝石斧");
+        this.add(GemCraftItem.SAPPHIRE_HOE.get(),"蓝宝石锄");
     }
 }
