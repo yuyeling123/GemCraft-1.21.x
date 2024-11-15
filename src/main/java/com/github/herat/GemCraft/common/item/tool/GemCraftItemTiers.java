@@ -13,10 +13,13 @@ import org.jetbrains.annotations.NotNull;
 import java.util.function.Supplier;
 
 
+/**
+ * @author herat
+ */
 
 public enum GemCraftItemTiers implements Tier {
     RUBY(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,3,2048,9F,4F,22,()->Ingredient.of(GemCraftItem.RUBY.get())),
-    SAPPHIRE(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,3,3096,14F,5F,22,()->Ingredient.of(GemCraftItem.SAPPHIRE.get()));
+    SAPPHIRE(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,4,3096,14F,5F,22,()->Ingredient.of(GemCraftItem.SAPPHIRE.get()));
 
 
     private final TagKey<Block> incorrectBlocksForDrops;

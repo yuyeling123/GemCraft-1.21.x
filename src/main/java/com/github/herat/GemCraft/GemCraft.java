@@ -21,6 +21,9 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
+/**
+ * @author herat
+ */
 @Mod(GemCraft.MODID)
 public class GemCraft
 {

@@ -14,7 +14,11 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import java.util.function.Supplier;
 
 import static com.github.herat.GemCraft.common.register.GemCraftItem.ITEMS;
+import static com.github.herat.GemCraft.common.register.GemCraftItem.allItem;
 
+/**
+ * @author herat
+ */
 public class GemCraftBlock {
 
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(Registries.BLOCK,GemCraft.MODID);
@@ -30,8 +34,8 @@ public class GemCraftBlock {
     }
 
     public static void registerBlockItem(String name, Supplier<Block> block , Item.Properties properties) {
-        ITEMS.register(name, () -> new BlockItem(block.get(), properties));
-
+        Supplier<Item> item = ITEMS.register(name, () -> new BlockItem(block.get(), properties));
+        allItem.add(item);
     }
 
     public static final Supplier<Block> RUBY_BLOCK = registerBlock("ruby_block" ,() -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK).sound(SoundType.METAL)));
