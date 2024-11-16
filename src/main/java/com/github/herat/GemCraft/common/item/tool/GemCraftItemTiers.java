@@ -18,7 +18,7 @@ import java.util.function.Supplier;
  */
 
 public enum GemCraftItemTiers implements Tier {
-    RUBY(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,3,2048,9F,4F,22,()->Ingredient.of(GemCraftItem.RUBY.get())),
+    RUBY(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,3,2048,9F,4F,15,()->Ingredient.of(GemCraftItem.RUBY.get())),
     SAPPHIRE(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,4,3096,14F,5F,22,()->Ingredient.of(GemCraftItem.SAPPHIRE.get()));
 
 

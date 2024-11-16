@@ -1,6 +1,9 @@
 package com.github.herat.GemCraft.common.datagen;
 
 import com.github.herat.GemCraft.GemCraft;
+import com.github.herat.GemCraft.common.datagen.GCModelsProvider.GCBlockStatesProvider;
+import com.github.herat.GemCraft.common.datagen.GCModelsProvider.GCItemModelProvider;
+import com.github.herat.GemCraft.common.datagen.GCRecipeProvider.GCRecipeProvider;
 import com.github.herat.GemCraft.common.datagen.LanguageProvider.GCLanguageProvider;
 import com.github.herat.GemCraft.common.datagen.LanguageProvider.GCLanguageProviderCN;
 import net.minecraft.data.DataProvider;
