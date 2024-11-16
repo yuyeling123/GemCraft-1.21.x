@@ -78,7 +78,7 @@ public enum GemCraftItemTiers implements Tier {
         return Tier.super.createToolProperties(block);
     }
 
-    public int getLevel() {
+    public int  getLevel() {
         return this.level;
     }
 }
