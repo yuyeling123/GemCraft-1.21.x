@@ -1,6 +1,7 @@
 package com.github.herat.GemCraft.common.datagen;
 
 import com.github.herat.GemCraft.GemCraft;
+import com.github.herat.GemCraft.common.datagen.GCBlockTagProvider.GCBlockTagProvider;
 import com.github.herat.GemCraft.common.datagen.GCModelsProvider.GCBlockStatesProvider;
 import com.github.herat.GemCraft.common.datagen.GCModelsProvider.GCItemModelProvider;
 import com.github.herat.GemCraft.common.datagen.GCRecipeProvider.GCRecipeProvider;
@@ -54,6 +55,12 @@ public class GCDataGeneratorHandler {
         event.getGenerator().addProvider(
                 event.includeClient(),
                 (DataProvider.Factory<GCLanguageProviderCN>) pOutput -> new GCLanguageProviderCN(pOutput,GemCraft.MODID,"zh_cn")
+        );
+
+        //Tag
+        event.getGenerator().addProvider(
+                event.includeServer(),
+                (DataProvider.Factory<GCBlockTagProvider>) pOutput -> new GCBlockTagProvider(pOutput,lp,GemCraft.MODID,efh)
         );
     }
 }

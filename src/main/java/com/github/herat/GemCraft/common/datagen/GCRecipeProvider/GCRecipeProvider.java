@@ -26,15 +26,15 @@ public class GCRecipeProvider extends RecipeProvider {
 
         //item recipe
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,GemCraftItem.RUBY.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, GemCraftItem.RUBY.get())
                 .pattern("#")
-                .define('#',GemCraftBlock.RUBY_BLOCK.get())
+                .define('#', GemCraftBlock.RUBY_BLOCK.get())
                 .unlockedBy("has_ruby_block", has(GemCraftBlock.RUBY_BLOCK.get()))
                 .save(pRecipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,GemCraftItem.SAPPHIRE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, GemCraftItem.SAPPHIRE.get())
                 .pattern("#")
-                .define('#',GemCraftBlock.SAPPHIRE_BLOCK.get())
+                .define('#', GemCraftBlock.SAPPHIRE_BLOCK.get())
                 .unlockedBy("has_sapphire_block", has(GemCraftBlock.SAPPHIRE_BLOCK.get()))
                 .save(pRecipeOutput);
 
@@ -81,6 +81,32 @@ public class GCRecipeProvider extends RecipeProvider {
                 .define('b', Items.STICK)
                 .unlockedBy("has_ruby", has(GemCraftItem.RUBY.get()))
                 .save(pRecipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, GemCraftItem.RUBY_HELMET.get())
+                .pattern("###")
+                .pattern("# #")
+                .define('#', GemCraftItem.RUBY.get())
+                .unlockedBy("has_ruby", has(GemCraftItem.RUBY.get()))
+                .save(pRecipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, GemCraftItem.RUBY_CHESTPLATE.get())
+                .pattern("# #")
+                .pattern("###")
+                .pattern("###")
+                .define('#', GemCraftItem.RUBY.get())
+                .unlockedBy("has_ruby", has(GemCraftItem.RUBY.get()))
+                .save(pRecipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, GemCraftItem.RUBY_LEGGINGS.get())
+                .pattern("###")
+                .pattern("# #")
+                .pattern("# #")
+                .define('#', GemCraftItem.RUBY.get())
+                .unlockedBy("has_ruby", has(GemCraftItem.RUBY.get()))
+                .save(pRecipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, GemCraftItem.RUBY_BOOT.get())
+                .pattern("# #")
+                .pattern("# #")
+                .define('#', GemCraftItem.RUBY.get())
+                .unlockedBy("has_ruby", has(GemCraftItem.RUBY.get()))
+                .save(pRecipeOutput);
 
         //sapphire tool recipe
 
@@ -124,6 +150,32 @@ public class GCRecipeProvider extends RecipeProvider {
                 .define('b', Items.STICK)
                 .unlockedBy("has_sapphire", has(GemCraftItem.SAPPHIRE.get()))
                 .save(pRecipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, GemCraftItem.SAPPHIRE_HELMET.get())
+                .pattern("###")
+                .pattern("# #")
+                .define('#', GemCraftItem.SAPPHIRE.get())
+                .unlockedBy("has_sapphire", has(GemCraftItem.SAPPHIRE.get()))
+                .save(pRecipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, GemCraftItem.SAPPHIRE_CHESTPLATE.get())
+                .pattern("# #")
+                .pattern("###")
+                .pattern("###")
+                .define('#', GemCraftItem.SAPPHIRE.get())
+                .unlockedBy("has_sapphire", has(GemCraftItem.SAPPHIRE.get()))
+                .save(pRecipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, GemCraftItem.SAPPHIRE_LEGGINGS.get())
+                .pattern("###")
+                .pattern("# #")
+                .pattern("# #")
+                .define('#', GemCraftItem.SAPPHIRE.get())
+                .unlockedBy("has_sapphire", has(GemCraftItem.SAPPHIRE.get()))
+                .save(pRecipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, GemCraftItem.SAPPHIRE_BOOT.get())
+                .pattern("# #")
+                .pattern("# #")
+                .define('#', GemCraftItem.SAPPHIRE.get())
+                .unlockedBy("has_sapphire", has(GemCraftItem.SAPPHIRE.get()))
+                .save(pRecipeOutput);
 
         //block recipe
 
@@ -131,14 +183,14 @@ public class GCRecipeProvider extends RecipeProvider {
                 .pattern("###")
                 .pattern("###")
                 .pattern("###")
-                .define('#',GemCraftItem.RUBY.get())
+                .define('#', GemCraftItem.RUBY.get())
                 .unlockedBy("has_ruby", has(GemCraftItem.RUBY.get()))
                 .save(pRecipeOutput);
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS,GemCraftBlock.SAPPHIRE_BLOCK.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, GemCraftBlock.SAPPHIRE_BLOCK.get())
                 .pattern("###")
                 .pattern("###")
                 .pattern("###")
-                .define('#',GemCraftItem.SAPPHIRE.get())
+                .define('#', GemCraftItem.SAPPHIRE.get())
                 .unlockedBy("has_sapphire", has(GemCraftItem.SAPPHIRE.get()))
                 .save(pRecipeOutput);
     }

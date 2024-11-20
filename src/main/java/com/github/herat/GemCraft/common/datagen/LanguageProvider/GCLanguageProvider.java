@@ -24,6 +24,10 @@ public class GCLanguageProvider extends LanguageProvider {
         this.add(GemCraftItem.RUBY_SHOVEL.get(),"Ruby Shovel");
         this.add(GemCraftItem.RUBY_AXE.get(),"Ruby Axe");
         this.add(GemCraftItem.RUBY_HOE.get(),"Ruby Hoe");
+        this.add(GemCraftItem.RUBY_HELMET.get(), "Ruby Helmet");
+        this.add(GemCraftItem.RUBY_CHESTPLATE.get(), "Ruby Chestplate");
+        this.add(GemCraftItem.RUBY_LEGGINGS.get(), "Ruby Leggings");
+        this.add(GemCraftItem.RUBY_BOOT.get(), "Ruby Boot");
         this.add(GemCraftBlock.RUBY_BLOCK.get(),"Ruby Block");
         this.add(GemCraftItem.SAPPHIRE.get(),"Sapphire");
         this.add(GemCraftItem.SAPPHIRE_SWORD.get(),"Sapphire Sword");
@@ -31,6 +35,10 @@ public class GCLanguageProvider extends LanguageProvider {
         this.add(GemCraftItem.SAPPHIRE_SHOVEL.get(),"Sapphire Shovel");
         this.add(GemCraftItem.SAPPHIRE_AXE.get(),"Sapphire Axe");
         this.add(GemCraftItem.SAPPHIRE_HOE.get(),"Sapphire Hoe");
+        this.add(GemCraftItem.SAPPHIRE_HELMET.get(), "Sapphire Helmet");
+        this.add(GemCraftItem.SAPPHIRE_CHESTPLATE.get(), "Sapphire Chestplate");
+        this.add(GemCraftItem.SAPPHIRE_LEGGINGS.get(), "Sapphire Leggings");
+        this.add(GemCraftItem.SAPPHIRE_BOOT.get(), "Sapphire Boot");
         this.add(GemCraftBlock.SAPPHIRE_BLOCK.get(),"Sapphire Block");
     }
 }
