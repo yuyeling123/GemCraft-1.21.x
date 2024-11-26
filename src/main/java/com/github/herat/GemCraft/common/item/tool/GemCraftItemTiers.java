@@ -18,8 +18,8 @@ import java.util.function.Supplier;
  */
 
 public enum GemCraftItemTiers implements Tier {
-    RUBY(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,3,2048,9F,4F,15,()->Ingredient.of(GemCraftItem.RUBY.get())),
-    SAPPHIRE(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,4,3096,14F,5F,22,()->Ingredient.of(GemCraftItem.SAPPHIRE.get()));
+    RUBY(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 3, 2048, 9F, 4F, 15, () -> Ingredient.of(GemCraftItem.RUBY.get())),
+    SAPPHIRE(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 4, 3096, 14F, 5F, 22, () -> Ingredient.of(GemCraftItem.SAPPHIRE.get()));
 
 
     private final TagKey<Block> incorrectBlocksForDrops;
@@ -31,7 +31,7 @@ public enum GemCraftItemTiers implements Tier {
     private final Supplier<Ingredient> repairIngredient;
 
 
-    GemCraftItemTiers(TagKey<Block> incorrectBlocksForDrops, int pLevel, int pUsers, float pSpeed, float pDamage,int pEnchantmentValue, Supplier<Ingredient> pRepairIngredient) {
+    GemCraftItemTiers(TagKey<Block> incorrectBlocksForDrops, int pLevel, int pUsers, float pSpeed, float pDamage, int pEnchantmentValue, Supplier<Ingredient> pRepairIngredient) {
         this.incorrectBlocksForDrops = incorrectBlocksForDrops;
         this.level = pLevel;
         this.uses = pUsers;
@@ -78,7 +78,7 @@ public enum GemCraftItemTiers implements Tier {
         return Tier.super.createToolProperties(block);
     }
 
-    public int  getLevel() {
+    public int getLevel() {
         return this.level;
     }
 }

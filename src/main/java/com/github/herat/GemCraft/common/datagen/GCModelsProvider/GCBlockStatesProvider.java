@@ -15,7 +15,12 @@ public class GCBlockStatesProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        this.simpleBlockWithItem(GemCraftBlock.RUBY_BLOCK.get(),cubeAll(GemCraftBlock.RUBY_BLOCK.get()));
-        this.simpleBlockWithItem(GemCraftBlock.SAPPHIRE_BLOCK.get(),cubeAll(GemCraftBlock.SAPPHIRE_BLOCK.get()));
+        this.simpleBlockWithItem(GemCraftBlock.RUBY_BLOCK.get(), cubeAll(GemCraftBlock.RUBY_BLOCK.get()));
+        this.simpleBlockWithItem(GemCraftBlock.SAPPHIRE_BLOCK.get(), cubeAll(GemCraftBlock.SAPPHIRE_BLOCK.get()));
+        this.simpleBlockWithItem(GemCraftBlock.DEEPSLATE_RUBY_ORE.get(), cubeAll(GemCraftBlock.DEEPSLATE_RUBY_ORE.get()));
+        this.simpleBlockWithItem(GemCraftBlock.DEEPSLATE_SAPPHIRE_ORE.get(),cubeAll(GemCraftBlock.DEEPSLATE_SAPPHIRE_ORE.get()));
+        this.simpleBlockWithItem(GemCraftBlock.RUBY_ORE.get(), cubeAll(GemCraftBlock.RUBY_ORE.get()));
+        this.simpleBlockWithItem(GemCraftBlock.SAPPHIRE_ORE.get(), cubeAll(GemCraftBlock.SAPPHIRE_ORE.get()));
+        this.simpleBlockWithItem(GemCraftBlock.END_SAPPHIRE_ORE.get(), cubeAll(GemCraftBlock.END_SAPPHIRE_ORE.get()));
     }
 }

@@ -14,14 +14,14 @@ import java.util.function.Supplier;
 /**
  * @author herat
  */
-public class GemCraftCreativeTab  {
-    public static final DeferredRegister<CreativeModeTab> GEMCRAFT_TAB = DeferredRegister.create(Registries.CREATIVE_MODE_TAB,GemCraft.MODID);
+public class GemCraftCreativeTab {
+    public static final DeferredRegister<CreativeModeTab> GEMCRAFT_TAB = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, GemCraft.MODID);
     public static final String GEMCRAFT_TAB_STRING = "creative.gemcraft_tab";
-    public static Supplier<CreativeModeTab> GEMCRAFT_MOD_TAB = GEMCRAFT_TAB.register("gemcraft_tab",()-> CreativeModeTab.builder()
+    public static Supplier<CreativeModeTab> GEMCRAFT_MOD_TAB = GEMCRAFT_TAB.register("gemcraft_tab", () -> CreativeModeTab.builder()
             .withTabsBefore(CreativeModeTabs.COMBAT)
             .title(Component.translatable(GEMCRAFT_TAB_STRING))
             .icon(() -> GemCraftItem.RUBY.get().getDefaultInstance())
-            .displayItems((pParameters,pOutput) -> {
+            .displayItems((pParameters, pOutput) -> {
                 for (Supplier<? extends Item> itemSup : GemCraftItem.allItem) {
                     pOutput.accept(itemSup.get());
                 }
