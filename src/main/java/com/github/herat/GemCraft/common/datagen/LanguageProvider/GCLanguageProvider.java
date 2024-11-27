@@ -45,5 +45,6 @@ public class GCLanguageProvider extends LanguageProvider {
         this.add(GemCraftBlock.SAPPHIRE_ORE.get(), "Sapphire Ore");
         this.add(GemCraftBlock.END_SAPPHIRE_ORE.get(), "End Sapphire Ore");
         this.add(GemCraftBlock.DEEPSLATE_SAPPHIRE_ORE.get(), "Deepslate Sapphire Ore");
+        this.add(GemCraftItem.SAPPHIRE_APPLE.get(), "Sapphire Apple");
     }
 }

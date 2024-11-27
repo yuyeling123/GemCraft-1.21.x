@@ -45,5 +45,6 @@ public class GCLanguageProviderCN extends LanguageProvider {
         this.add(GemCraftBlock.SAPPHIRE_ORE.get(), "蓝宝石矿石");
         this.add(GemCraftBlock.END_SAPPHIRE_ORE.get(), "末地蓝宝石矿石");
         this.add(GemCraftBlock.DEEPSLATE_SAPPHIRE_ORE.get(), "深层蓝宝石矿石");
+        this.add(GemCraftItem.SAPPHIRE_APPLE.get(), "蓝宝石苹果");
     }
 }
